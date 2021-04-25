@@ -53,7 +53,7 @@ instance FromHttpApiData Query where
 
 
 {- |
-  A raw DNS response message. The 'Network.DNS' module contains tools
+  A raw DNS response message. The "Network.DNS" module contains tools
   for encoding and decoding these messages.
 -}
 newtype Response = Response {unResponse :: ByteString}
