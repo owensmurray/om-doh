@@ -17,7 +17,7 @@ module OM.DoH.Api (
 
 
 import Data.ByteString (ByteString)
-import Data.ByteString.Base64 (decodeBase64)
+import Data.ByteString.Base64 (decodeBase64Untyped)
 import Data.Text.Encoding (encodeUtf8)
 import GHC.Generics (Generic)
 import Servant.API (type (:>), Accept(contentType),
@@ -49,7 +49,7 @@ data DoHApi route = DoHApi {
 newtype Query = Query {unQuery :: ByteString}
   deriving newtype (MimeUnrender DnsMsgCT)
 instance FromHttpApiData Query where
-  parseUrlPiece txt = Query <$> decodeBase64 (encodeUtf8 txt)
+  parseUrlPiece txt = Query <$> decodeBase64Untyped (encodeUtf8 txt)
 
 
 {- |
