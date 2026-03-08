@@ -4,4 +4,7 @@ package om-doh
   ghc-options:
     -Werror
 
+allow-newer: base, template-haskell
 
+constraints:
+  crypton < 1.1
