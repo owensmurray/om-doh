@@ -1,6 +1,6 @@
 cabal-version:       3.0
 name:                om-doh
-version:             0.1.0.4
+version:             0.1.0.5
 synopsis:            om-doh
 -- description:         
 homepage:            https://github.com/owensmurray/om-doh
@@ -11,7 +11,10 @@ maintainer:          rick@owensmurray.com
 copyright:           2025 Owens Murray, LLC.
 -- category:            
 build-type:          Simple
-extra-source-files:  README.md
+extra-source-files:
+  README.md
+  changelog.md
+  LICENSE
 
 library
   exposed-modules:     
