@@ -1,6 +1,6 @@
 cabal-version:       3.0
 name:                om-doh
-version:             0.1.0.4
+version:             0.1.0.5
 synopsis:            om-doh
 -- description:         
 homepage:            https://github.com/owensmurray/om-doh
@@ -8,10 +8,13 @@ license:             MIT
 license-file:        LICENSE
 author:              Rick Owens
 maintainer:          rick@owensmurray.com
-copyright:           2021 Owens Murray, LLC.
+copyright:           2025 Owens Murray, LLC.
 -- category:            
 build-type:          Simple
-extra-source-files:  README.md
+extra-source-files:
+  README.md
+  changelog.md
+  LICENSE
 
 library
   exposed-modules:     
@@ -20,7 +23,7 @@ library
   other-modules:       
   -- other-extensions:    
   build-depends:
-   , base           >= 4.19.0.0 && < 4.22
+   , base           >= 4.19.0.0 && < 4.23
    , base64         >= 1.0      && < 1.1
    , bytestring     >= 0.12.0.2 && < 0.13
    , http-api-data  >= 0.6      && < 0.7
